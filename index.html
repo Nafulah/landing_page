@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <title>Sifa Online Store</title>
 </head>
 <body>
     <!-- Header Section -->
      <header>
-        <div class="container">
-            <h1 class="logo">Sifa Online Store</h1>
-            <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Sifa Online Store</a>
+             <button class="menu-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
         </div>
      </header>
      <!--Hero Section-->
      <section class="hero" id="home">
-        <div class="container">
+        <div class="containers">
             <h2>Welcome to Sifa Online Store</h2>
             <p>Your one-stop shop for all your needs!</p>
             <a href="#products" class="btn">Shop Now</a>
@@ -33,7 +34,7 @@
      </section>
         <!--Products Section-->
         <section class="product-section" id="products">
-            <div class="container">
+            <div class="containers">
                 <h2>Our Products</h2>
                 <div class="product-grid">
                     <!-- Product Item 1 -->
@@ -76,16 +77,15 @@
         </section>  
         <!--About Us Section-->
         <section class="about-section" id="about">
-            <div class="container">
+            <div class="about">
                 <h2>About Us</h2>
                 <p>Sifa Online Store is dedicated to providing high-quality products at affordable prices. We believe in customer satisfaction and strive to offer the best shopping experience. Our team is passionate about curating a diverse range of products to meet the needs of our customers.</p>
                 <p>We are committed to sustainability and ethical practices in our sourcing and operations. Thank you for choosing Sifa Online Store!</p>
             </div>
         </section>
-    </main>
     <!--Contact Section-->
     <section class="contact-section" id="contact">
-        <div class="container">
+        <div class="contacts">
             <h2>Contact Us</h2>
             <form action="#" method="post" class="contact-form">
                 <div class="form-group">
@@ -106,11 +106,16 @@
     </section>
     <!--FOOTER SECTION-->
     <footer> 
-        <p>&copy; 2026 Sifa Online Landing Store Page. All rights reserver.</p>
-        <p> You can also reach us through our social media acounts</p>
-        <i class="fa fa-facebook" style="font-size:28px"></i>
-        <i class="fa fa-instagram" style="font-size:28px"></i>
-        <i class="fa fa-telegram" style="font-size:28px"></i>
-    </footer>
+    <div class="footer-container">
+    <p class="footer-copyright">&copy; 2026 Sifa Online Store. All rights reserved.</p>
+    <p class="footer-text">You can also reach us through our social media accounts:</p>
+    <div class="social-links">
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" target="_blank" aria-label="Telegram"><i class="fa fa-telegram"></i></a>
+    </div>
+    </div>
+</footer>
+
 </body>
 </html>
